@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Divane Nails — Pia Bustamante</title>
+<meta name="description" content="Divane Nails — uñas, nail art y diseños de Pia Bustamante. Reservá tu turno por WhatsApp.">
+<style>
+:root{
+  --bg:#171313;
+  --card:#211b1b;
+  --cream:#f8eee9;
+  --muted:#cbb9b2;
+  --rose:#d9a9a4;
+  --rose2:#b97876;
+  --line:rgba(248,238,233,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--cream);
+  font-family:Georgia,"Times New Roman",serif;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(980px,88%);margin:auto}
+.hero{
+  min-height:92vh;display:grid;place-items:center;position:relative;overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(23,19,19,.94) 0%,rgba(23,19,19,.76) 48%,rgba(23,19,19,.35) 100%),
+    url('cfdc250f-8995-40df-aea1-b05a23509bde.png') center/cover;
+}
+.hero:after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 75% 35%,rgba(217,169,164,.18),transparent 32%);
+  pointer-events:none;
+}
+.nav{
+  position:absolute;top:0;left:0;right:0;padding:24px 6%;z-index:2;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.nav-left{display:flex;align-items:center;gap:30px}
+.nav-book{background:var(--rose);color:#211919;padding:10px 17px;border-radius:999px;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.3px}
+.logo{font-size:25px;letter-spacing:2px}
+.logo span{color:var(--rose)}
+.insta{font-size:13px;letter-spacing:1.5px;color:var(--muted)}
+.hero-content{position:relative;z-index:1;padding:100px 0 70px;max-width:720px;margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--rose);margin-bottom:20px}
+h1{font-size:clamp(58px,9vw,112px);line-height:.86;font-weight:400;margin:0 0 26px;max-width:720px}
+h1 em{font-style:italic;color:#ead3ce}
+.lead{font-size:19px;line-height:1.6;color:var(--muted);max-width:520px;margin:0 0 34px}
+.cta{
+  display:inline-flex;align-items:center;gap:12px;background:var(--rose);color:#211919;
+  padding:16px 24px;border-radius:999px;font-family:Arial,sans-serif;font-size:14px;
+  font-weight:700;letter-spacing:.4px;transition:.2s;box-shadow:0 12px 35px rgba(0,0,0,.28)
+}
+.cta:hover{transform:translateY(-2px);background:#e6bcb7}
+.secondary{display:inline-block;margin-left:18px;color:var(--cream);font-size:14px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.section{padding:76px 0}
+.section-head{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:32px;max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{font-size:11px;letter-spacing:3px;color:var(--rose);text-transform:uppercase}
+h2{font-size:44px;font-weight:400;margin:8px 0 0}
+.note{color:var(--muted);max-width:420px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:900px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);padding:23px;min-height:145px;display:flex;flex-direction:column;justify-content:space-between}
+.card .num{font-size:12px;color:var(--rose)}
+.card h3{font-size:21px;font-weight:400;margin:18px 0 0}
+.price{font-family:Arial,sans-serif;font-size:18px;color:#f0d4cf}
+.extras{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:900px;margin:0 auto;background:none;border:0}
+.extra{background:var(--card);border:1px solid var(--line);padding:20px 18px;min-height:95px;display:flex;flex-direction:column;justify-content:center;gap:7px;color:var(--muted);text-align:center}
+.extra strong{font-size:17px}
+.extra span{font-family:Arial,sans-serif;font-size:12px;color:var(--rose)}
+.extra strong{color:var(--cream);font-weight:400}
+.removal{max-width:900px;margin:14px auto 0;border:1px solid var(--line);padding:18px 20px;display:flex;justify-content:space-between;color:var(--muted)}
+.removal strong{color:var(--cream);font-weight:400}
+.booking{
+  padding:80px 0;background:
+  linear-gradient(135deg,rgba(217,169,164,.14),transparent 55%),#201919;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center
+}
+.booking h2{font-size:clamp(38px,6vw,64px);margin-bottom:16px}
+.booking p{color:var(--muted);margin:0 auto 30px;max-width:540px;line-height:1.6}
+footer{padding:30px 0;color:#8f7e79;font-size:12px;display:flex;justify-content:space-between;max-width:980px}
+@media(max-width:800px){
+ .hero{min-height:88vh;background:linear-gradient(90deg,rgba(23,19,19,.93),rgba(23,19,19,.7)),url('cfdc250f-8995-40df-aea1-b05a23509bde.png') center/cover}
+ .grid{grid-template-columns:1fr 1fr}
+ .section-head{display:block}.note{margin-top:16px}
+}
+@media(max-width:520px){
+ .nav{padding:18px 0}.logo{font-size:20px}.insta{font-size:11px}.nav-left{gap:12px}.nav-book{font-size:10px;padding:9px 12px}
+ h1{font-size:58px}.lead{font-size:17px}
+ .secondary{display:block;margin:18px 0 0}
+ .grid,.extras{grid-template-columns:1fr 1fr}
+ .section{padding:65px 0} h2{font-size:37px}
+ .grid,.extras{grid-template-columns:1fr}
+ footer{display:block;line-height:2}
+}
+</style>
+</head>
+<body>
+<header class="hero" id="inicio">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left"><div class="logo">DIVANE<span>NAILS</span></div><a class="nav-book" href="https://wa.me/5492617105732?text=Hola%20%40Divanenails%21%20Quiero%20pedir%20un%20turno%20para%20hacerme%20las%20u%C3%B1as.%20%C2%BFQu%C3%A9%20turnos%20ten%C3%A9s%20disponibles%3F" target="_blank" rel="noopener">Reservar turno</a></div>
+      <a class="insta" href="https://instagram.com/divanenails" target="_blank" rel="noopener">Instagram · @divanenails ↗</a>
+    </nav>
+    <div class="hero-content">
+      <div class="eyebrow">Pia Bustamante · Nail Artist</div>
+      <h1>Uñas que<br><em>hablan por vos.</em></h1>
+      <p class="lead">Diseños delicados, detalles que enamoran y un espacio para que salgas sintiéndote increíble.</p>
+      <a class="cta" href="https://wa.me/542617105732?text=Hola%20%40Divanenails%21%20%F0%9F%92%85%20Quiero%20pedir%20un%20turno%20para%20hacerme%20las%20u%C3%B1as.%20%C2%BFQu%C3%A9%20turnos%20ten%C3%A9s%20disponibles%3F" target="_blank" rel="noopener">💬 Reservar mi turno</a>
+      <a class="secondary" href="#precios">Ver precios ↓</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section container" id="precios">
+  <div class="section-head">
+    <div><div class="kicker">Servicios</div><h2>Elegí tu próximo look.</h2></div>
+    <p class="note">Todos los precios están expresados en pesos argentinos. Consultá disponibilidad directamente por WhatsApp.</p>
+  </div>
+  <div class="grid"><article class="card"><span class="num">001</span><h3>Semipermanente</h3><span class="price">$9.000</span></article><article class="card"><span class="num">002</span><h3>Kapping</h3><span class="price">$10.000</span></article><article class="card"><span class="num">003</span><h3>Soft Gel</h3><span class="price">$13.000</span></article><article class="card"><span class="num">004</span><h3>Semi manos + pies</h3><span class="price">$20.000</span></article></div>
+</section>
+
+<section class="section container" style="padding-top:0">
+  <div class="section-head">
+    <div><div class="kicker">Detalles</div><h2>Para hacerlo único.</h2></div>
+  </div>
+  <div class="extras">
+    <div class="extra"><strong>Full French</strong><span>A consultar</span></div>
+    <div class="extra"><strong>Full Polvos</strong><span>A consultar</span></div>
+    <div class="extra"><strong>Nail Art</strong><span>A consultar</span></div>
+    <div class="extra"><strong>Diseños personalizados</strong><span>A consultar</span></div>
+    <div class="extra"><strong>Apliques &amp; Strass</strong><span>A consultar</span></div>
+    <div class="extra"><strong>Otros servicios</strong><span>Consultá por WhatsApp</span></div>
+  </div>
+  <div class="removal"><strong>Remoción de servicio de otra colega</strong><span>$4.000</span></div>
+</section>
+
+<section class="booking">
+  <div class="container">
+    <div class="kicker">¿Lista para tus uñas?</div>
+    <h2>Tu próximo turno<br><em>empieza acá.</em></h2>
+    <p>Escribile a Pia y consultá los días y horarios disponibles. Te responde por WhatsApp.</p>
+    <a class="cta" href="https://wa.me/542617105732?text=Hola%20%40Divanenails%21%20%F0%9F%92%85%20Quiero%20pedir%20un%20turno%20para%20hacerme%20las%20u%C3%B1as.%20%C2%BFQu%C3%A9%20turnos%20ten%C3%A9s%20disponibles%3F" target="_blank" rel="noopener">💬 Hola @Divanenails, quiero mi turno</a>
+  </div>
+</section>
+</main>
+
+<footer class="container">
+  <span>© Divane Nails · Pia Bustamante</span>
+  <a href="https://instagram.com/divanenails" target="_blank" rel="noopener">Instagram · @divanenails</a>
+</footer>
+</body>
+</html>
