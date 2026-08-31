@@ -91,7 +91,35 @@ h2{font-size:44px;font-weight:400;margin:8px 0 0}
 }
 .booking h2{font-size:clamp(38px,6vw,64px);margin-bottom:16px}
 .booking p{color:var(--muted);margin:0 auto 30px;max-width:540px;line-height:1.6}
-footer{padding:30px 0;color:#8f7e79;font-size:12px;display:flex;justify-content:space-between;max-width:980px}
+footer{
+  padding:30px 0;
+  color:#8f7e79;
+  font-size:15px;
+  display:block;
+  max-width:980px;
+}
+
+.footer-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+}
+
+.footer-bottom{
+  margin-top:24px;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.12);
+  text-align:center;
+  font-size:15px;
+  line-height:1.6;
+}
+
+.footer-bottom .galia-link{
+  font-weight:600;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
 @media(max-width:800px){
  .hero{min-height:88vh;background:linear-gradient(90deg,rgba(23,19,19,.93),rgba(23,19,19,.7)),url('cfdc250f-8995-40df-aea1-b05a23509bde.png') center/cover}
  .grid{grid-template-columns:1fr 1fr}
@@ -104,7 +132,22 @@ footer{padding:30px 0;color:#8f7e79;font-size:12px;display:flex;justify-content:
  .grid,.extras{grid-template-columns:1fr 1fr}
  .section{padding:65px 0} h2{font-size:37px}
  .grid,.extras{grid-template-columns:1fr}
- footer{display:block;line-height:2}
+ footer{
+  display:block;
+  line-height:1.6;
+}
+
+.footer-top{
+  flex-direction:column;
+  gap:12px;
+  text-align:center;
+}
+
+.footer-bottom{
+  margin-top:24px;
+  padding-top:20px;
+  font-size:15px;
+}
 }
 </style>
 </head>
@@ -113,7 +156,7 @@ footer{padding:30px 0;color:#8f7e79;font-size:12px;display:flex;justify-content:
   <div class="container">
     <nav class="nav">
       <div class="nav-left"><div class="logo">DIVANE<span>NAILS</span></div><a class="nav-book" href="https://wa.me/5492617105732?text=Hola%20%40Divanenails%21%20Quiero%20pedir%20un%20turno%20para%20hacerme%20las%20u%C3%B1as.%20%C2%BFQu%C3%A9%20turnos%20ten%C3%A9s%20disponibles%3F" target="_blank" rel="noopener">Reservar turno</a></div>
-      <a class="insta" href="https://instagram.com/divanenails" target="_blank" rel="noopener">Instagram · @divanenails ↗</a>
+      <a class="insta" href="https://instagram.com/_divanenails" target="_blank" rel="noopener">Instagram · @_divanenails ↗</a>
     </nav>
     <div class="hero-content">
       <div class="eyebrow">Pia Bustamante · Nail Artist</div>
@@ -159,9 +202,48 @@ footer{padding:30px 0;color:#8f7e79;font-size:12px;display:flex;justify-content:
 </section>
 </main>
 
-<footer class="container">
-  <span>© Divane Nails · Pia Bustamante</span>
-  <a href="https://instagram.com/divanenails" target="_blank" rel="noopener">Instagram · @divanenails</a>
+<footer class="container footer-site">
+
+  <div class="footer-top">
+
+   <span>
+  © 2026 Divane Nails · Pia Bustamante ·
+  <a
+    href="https://wa.me/5492617105732?text=Hola%20%40Divanenails%21%20Quiero%20pedir%20un%20turno%20para%20hacerme%20las%20u%C3%B1as.%20%C2%BFQu%C3%A9%20turnos%20ten%C3%A9s%20disponibles%3F"
+    target="_blank"
+    rel="noopener"
+  >
+    +54 9 261 710-5732
+  </a>
+</span>
+
+    <a
+      href="https://www.instagram.com/_divanenails/"
+      target="_blank"
+      rel="noopener"
+    >
+      Instagram · @_divanenails
+    </a>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <span>Producido por</span>
+
+    <a
+      href="https://wa.me/5492616600192?text=Vi%20tu%20web%2C%20me%20interesa%20consultar%20por%20una."
+      target="_blank"
+      rel="noopener"
+      class="galia-link"
+    >
+      Ecosistema Galia
+    </a>
+
+    <span>· Todos los derechos reservados ©</span>
+
+  </div>
+
 </footer>
 </body>
 </html>
